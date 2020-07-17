@@ -14,5 +14,12 @@ namespace BaseAPICsharpWebAPIAuth.Controllers
         {
             return Request.CreateResponse(HttpStatusCode.OK, true);
         }
+
+        [Authorize]
+        [HttpGet]
+        public HttpResponseMessage funciona()
+        {
+            return Request.CreateResponse(HttpStatusCode.OK, true);
+        }
     }
 }
